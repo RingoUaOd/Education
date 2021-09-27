@@ -14,7 +14,7 @@ height = int(input('Please enter altitude for a triangle: '))
 for y in range(height):
     for x in range(height - y - 1):
         print(end='  ')
-    for j in range(2 * y + 1):
+    for _ in range(2 * y + 1):
         print('* ', end='')
     print()
 
