@@ -27,7 +27,4 @@ for key, values in text.items():
             new_dict[new_key] = [key]
         else:
             new_dict[new_key].append(key)
-
-
 print(new_dict)
-
