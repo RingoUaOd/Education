@@ -22,10 +22,9 @@ cols = 13
 for i in range(rows):
     print(i, end='\t')
     for j in range(cols):
-        if i == rows // 2 or j == cols // 2+2:
+        if i == rows // 2 or j == cols // 2:
             print(' *', end='')
         else:
             print(' @', end='')
     print()
 print()
-
