@@ -12,16 +12,15 @@
 # * * * * * * * * * * * * *
 
 
-height = int(input('Please enter altitude for a triangle: '))
-width = height * 2 - 1
+cols = int(input('Please enter cols: '))
+rows = cols * 2 - 1
 
-for y in range(height):
-    for x in range(width):
-        if y == height - 1 or x == height - y - 1 or y == x - height + 1:
+for i in range(cols):
+    print(i, end='\t')
+    for j in range(rows):
+        if i == cols - 1 or i == j - cols + 1 or j == cols - i - 1:
             print(' *', end='')
         else:
             print('  ', end='')
     print()
-
-print()
 
