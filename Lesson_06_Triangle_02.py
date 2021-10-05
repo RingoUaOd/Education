@@ -10,13 +10,12 @@
 #   * * * * * * * * * * *
 # * * * * * * * * * * * * *
 
-height = int(input('Please enter altitude for a triangle: '))
-for y in range(height):
-    for x in range(height - y - 1):
+cols = int(input('Please enter altitude for a triangle: '))
+for i in range(cols):
+    for j in range(cols - i - 1):
         print(end='  ')
-    for _ in range(2 * y + 1):
+    for _ in range(2 * i + 1):
         print('* ', end='')
     print()
-
 
 
